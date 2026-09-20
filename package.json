@@ -1,6 +1,7 @@
 {
   "name": "our-flame",
-  "version": "4.0.0",
+  "version": "5.0.0",
+  "private": true,
   "type": "module",
   "scripts": {"start": "node server.js"},
   "engines": {"node": ">=20"}
