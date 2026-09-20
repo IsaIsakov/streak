@@ -1,31 +1,27 @@
 # Our Flame ❤️‍🔥
 
-Приватный сайт-счётчик отношений + API для будущего iPhone-виджета через Widgy/Scriptable.
+Сайт + API для личного стрика пары.
 
 ## Railway
 
-1. Создай новый Empty Project / GitHub deployment.
-2. Загрузи файлы проекта.
-3. Railway сам выполнит `npm install` и `npm start`.
-4. При необходимости добавь переменные:
-   - `START_DATE=2026-08-07`
-   - `COUPLE_NAME=Мы`
+В корне проекта должны лежать:
 
-## API
+- `package.json`
+- `server.js`
+- `railway.json`
+- папка `public/`
 
-`GET /api/streak`
+Railway запускает `npm start`.
 
-Возвращает:
-- `startDate`
-- `daysTogether`
-- `streak`
-- `nextMilestone`
-- `daysToMilestone`
-- `emoji`
+Переменные окружения необязательны:
 
-Этот endpoint позже подключаем к Widgy.
+- `START_DATE=2026-08-07`
+- `COUPLE_NAME=Мы`
 
-## Фото
+Проверка после деплоя:
 
-Сейчас используется `public/couple-placeholder.svg`.
-Для вашей фотографии достаточно заменить фон в `.photo-layer` и `.widget-photo` на файл, например `/photo.jpg`.
+- `/` — сайт
+- `/health` — состояние сервера
+- `/api/streak` — данные для виджета
+
+Дата считается по часовому поясу `Asia/Almaty`.
