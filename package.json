@@ -1,8 +1,1 @@
-{
-  "name": "our-flame",
-  "version": "5.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {"start": "node server.js"},
-  "engines": {"node": ">=20"}
-}
+{"name":"our-flame","version":"7.0.0","type":"module","scripts":{"start":"node server.js"},"engines":{"node":">=20"}}

@@ -1,10 +1,3 @@
-# Наш огонёк v6
-
-Исправление пустого экрана в браузерах, где localStorage может быть недоступен.
-
-Railway: подключите Volume к `/data`, затем deploy. Старые данные v4 совместимы.
-
-Проверки:
-- `/health`
-- `/api/public`
-- `/api/widget`
+# Our Flame v7
+Серверный рендеринг: главная, вход и создание пары больше не зависят от стартового JavaScript/fetch/localStorage.
+Railway Volume: `/data`.
